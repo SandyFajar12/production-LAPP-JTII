@@ -1,0 +1,60 @@
+<?php 
+use App\Services\ComboController;
+use Illuminate\Support\Facades\Route;
+
+Route::prefix('services/combo')->group(function () {
+    Route::post('/role', [ComboController::class, 'getRole']);
+    Route::post('/company', [ComboController::class, 'getCompany']);
+    Route::post('/collector', [ComboController::class, 'getCollector']);
+    Route::post('/bank', [ComboController::class, 'getBank']);
+    Route::post('/approver', [ComboController::class, 'getApprover']);
+    Route::post('/allApprover', [ComboController::class, 'getAllApprover']);
+    Route::post('/legalapprover', [ComboController::class, 'getLegalApprover']);
+    Route::post('/mikroApprover', [ComboController::class, 'getMikroApprover']);
+    Route::post('/litigasiApprover', [ComboController::class, 'getLitigasiApprover']);
+    Route::post('/internalAuditApprover', [ComboController::class, 'getInternalAuditApprover']);
+    Route::post('/supplier', [ComboController::class, 'getSupplier']);
+    Route::post('/picCetak', [ComboController::class, 'getPicCetakOffering']);
+    Route::post('/bankSupplier', [ComboController::class, 'getBankSupplier']);
+    Route::post('/supplierJF', [ComboController::class, 'getSupplierJF']);
+    Route::post('/pic', [ComboController::class, 'getPic']);
+    Route::post('/pengadilan', [ComboController::class, 'getPengadilan']);
+    Route::post('/kpknl', [ComboController::class, 'getKpknl']);
+    Route::post('/balailelang', [ComboController::class, 'getBalaiLelang']);
+    Route::post('/piclelang', [ComboController::class, 'getPicLelang']);
+    Route::post('/company-black-list/{collectorId}', [ComboController::class, 'getCompanyBlackList']);
+    Route::post('/brand', [ComboController::class, 'getBrand']);
+    Route::post('/branch', [ComboController::class, 'getBranch']);
+    Route::post('/department', [ComboController::class, 'getDepartment']);
+    Route::post('/jabatan', [ComboController::class, 'getJabatan']);
+    Route::post('/model/{brandId}', [ComboController::class, 'getModel']);
+    Route::post('/branch/{companyId}', [ComboController::class, 'getBranch']);
+    Route::post('/category/{categoryKend}', [ComboController::class, 'getcategory']);
+    Route::post('/spbuType', [ComboController::class, 'getSpbuType']);
+    Route::post('/provinci', [ComboController::class, 'getProvinci']);
+    Route::post('/provinciNew', [ComboController::class, 'getProvinciNew']);
+    Route::post('/kabupaten/{provinciId}', [ComboController::class, 'getKabupaten']);
+    Route::post('/kabupatenNew', [ComboController::class, 'getKabupatenNew']);
+    Route::post('/merk', [ComboController::class, 'getMerk']);
+    Route::post('/model', [ComboController::class, 'getModel']);
+    Route::post('/subOrdinate', [ComboController::class, 'getSubOrdinate']);
+    Route::post('/karyawan', [ComboController::class, 'getKaryawan']);
+    Route::post('/kotaTujuan', [ComboController::class, 'getKotaTujuan']);
+    Route::post('/spbu', [ComboController::class, 'getSpbu']);
+    Route::post('/poolId', [ComboController::class, 'getPoolId']);
+    Route::post('/notaris', [ComboController::class, 'getNotaris']);
+    Route::post('/daftarSurat', [ComboController::class, 'getDaftarSurat']);
+    Route::post('/bpn', [ComboController::class, 'getDaftarBpn']);
+    Route::post('/pool', [ComboController::class, 'getDaftarPool']);
+    Route::post('/negosiasidebitur', [ComboController::class, 'getNegosiasiDebitur']);
+    Route::post('/subnegosiasidebitur/{negoId}', [ComboController::class, 'getSubNegosiasiDebitur']);
+    Route::post('/hubungandebitur', [ComboController::class, 'getHubunganDebitur']);
+    Route::post('/statusdebitur', [ComboController::class, 'getSubNegosiasiDebiturContected']);
+    Route::post('/listnamadc', [ComboController::class, 'getListNamaDc']);
+    Route::post('/JenisPengaduan', [ComboController::class, 'getJenisPengaduan']);
+    Route::post('/JenisMedia', [ComboController::class, 'getJenisMedia']);
+    Route::post('/alldepartment', [ComboController::class, 'getAllDepartment']);
+    Route::post('/empname-phl', [ComboController::class, 'getEmpnamePhl']);
+
+
+});

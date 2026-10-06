@@ -1,0 +1,54 @@
+<?php
+use Illuminate\Support\Facades\Route;
+require('web/global.php');
+
+Route::group(['middleware' => 'auth'], function(){
+    require('web/default.php');
+    require('web/common.php');
+    require('web/prompt.php');
+    require('web/grid.php');
+    require('web/combo.php');
+    require('web/security.php');
+    require('web/master.php');
+    require('web/transactions.php');
+    require('web/prints.php');
+    require('web/reports.php');
+    require('web/legal/master.php');
+    require('web/legal/transactions.php');
+    require('web/legal/reports.php');
+    require('web/mikro/transactions.php');
+    require('web/mikro/reports.php');
+    require('web/fm/master.php');
+    require('web/fm/transactions.php');
+    require('web/fm/reports.php');
+    require('web/spd/master.php');
+    require('web/spd/transactions.php');
+    require('web/spd/reports.php');
+    require('web/sp/master.php');
+    require('web/sp/history.php');
+    require('web/sp/transactions.php');
+    require('web/sp/master.php');
+    require('web/sp/history.php');
+    require('web/sp/transactions.php');
+    require('web/rp/master.php');
+    require('web/rp/transactions.php');
+    require('web/rp/reports.php');
+    require('web/fidusia/master.php');
+    require('web/fidusia/transactions.php');
+    require('web/fidusia/reports.php');
+    require('web/surat/master.php');
+    require('web/surat/transactions.php');
+    require('web/surat/reports.php');
+    require('web/deskcall/master.php');
+    require('web/deskcall/transactions.php');
+    require('web/custcare/master.php');
+    require('web/custcare/transactions.php');
+    require('web/custcare/reports.php');
+    require('web/litigasi/master.php');
+    require('web/litigasi/transactions.php');
+    require('web/litigasi/reports.php');
+    require('web/app-notifications.php');
+    require('web/audit/transactions.php');
+    require('web/audit/reports.php');
+
+});
